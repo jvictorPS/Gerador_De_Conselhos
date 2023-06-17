@@ -1,0 +1,52 @@
+:root {
+    --letras-cor: hsl(193, 38%, 86%);
+    --verde: hsl(150, 100%, 66%);
+    --fundo-cartao: hsl(217, 19%, 38%);
+    --dado-cor: hsl(217, 19%, 24%);
+    --fundo-body: hsl(218, 23%, 16%);
+}
+
+html {
+    height: 100%
+}
+
+body {
+    background-color: var(--fundo-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.container-conselho {
+    background-color: var(--dado-cor);
+    height: 350px;
+    width: 700px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.conselho-id {
+    color: var(--verde);
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+}
+
+.conselho-texto {
+    color: var(--letras-cor);
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.botao {
+    background-color: var(--verde);
+    height: 70px;
+    width: 70px;
+    border: none;
+    border-radius: 100px;
+    position: absolute;
+    right: 50%;
+    top: 90%;
+}
