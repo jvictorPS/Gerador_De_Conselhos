@@ -22,7 +22,7 @@ botao.addEventListener('click' , async () => {
         const resultado = await pegarConselho()
     
 
-        conselhoID.innerText = `Adivice # ${resultado.idConselho}`
+        conselhoID.innerText = `A D I V I C E   #  ${resultado.idConselho}`
         conselhoTexto.innerText = `"${resultado.textoConselho}"`
 
       } catch (error) {
