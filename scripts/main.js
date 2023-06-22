@@ -1,7 +1,7 @@
 async function pegarConselho() {
     try {
-        const response = await fetch('https://api.adviceslip.com/advice');
-        const data = await response.json();
+        const response = await fetch('https://api.adviceslip.com/advice')
+        const data = await response.json()
 
         const idConselho = data.slip.id
         const textoConselho = data.slip.advice
@@ -9,7 +9,7 @@ async function pegarConselho() {
         return {idConselho , textoConselho}
 
   } catch (error) {
-    console.error('Erro:', error);
+    console.error('Erro:', error)
   }
 }
 
@@ -21,7 +21,6 @@ botao.addEventListener('click' , async () => {
     try {
         const resultado = await pegarConselho()
     
-
         conselhoID.innerText = `A D I V I C E   #  ${resultado.idConselho}`
         conselhoTexto.innerText = `"${resultado.textoConselho}"`
 
